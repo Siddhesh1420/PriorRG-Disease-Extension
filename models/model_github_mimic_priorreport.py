@@ -458,7 +458,7 @@ class Alignment(pl.LightningModule):
 
 class PriorReportFusionModule(nn.Module):
     """
-    Dedicated prior-report-text fusion module (Option B). The prior report's
+    Dedicated prior-report-text fusion module . The prior report's
     findings text is encoded by the model's existing (frozen) text encoder,
     producing prior_report_embed. A small set of learned query tokens then
     cross-attend into that embedding to extract a prior-aware summary --
